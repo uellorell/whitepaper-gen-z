@@ -141,22 +141,30 @@ img{max-width:100%}
   .lp-research__cards--timeline article{padding:0 0 0 26px}
 }
 @media(max-width:760px){
-  .lp-wrap{width:calc(100% - 36px)}
+  .lp-wrap{width:calc(100% - 40px)}
   .lp-demo-bar{display:block;min-height:0;padding:8px 18px;font-size:10px}
   .lp-demo-bar span{margin-left:5px}
   .lp-hero{min-height:0}
   .lp-hero__inner{display:flex;flex-direction:column;min-height:0}
-  .lp-hero__copy{width:100%;max-width:none;padding:44px 0 0}
+  .lp-hero__copy{display:contents}
+  .lp-brand{order:1;margin-top:72px}
   .lp-brand,.lp-brand b{font-size:16px}
-  .lp-hero h1{font-size:clamp(31px,8.2vw,42px)}
-  .lp-hero__intro{max-width:530px;font-size:15px}
+  .lp-hero h1{order:2;font-size:clamp(31px,7.5vw,38px)}
+  .lp-hero__intro{order:3;max-width:530px;font-size:17px;line-height:1.7}
+  .lp-hero__art{position:relative;order:4;top:auto;right:auto;bottom:auto;align-self:center;width:min(100%,520px);max-width:none;margin:12px auto 24px;object-position:center}
+  .lp-price{order:5}
   .lp-price strong{font-size:34px}
-  .lp-hero__benefits{gap:8px;font-size:13px}
-  .lp-hero__art{position:relative;right:auto;bottom:auto;align-self:flex-start;width:min(115%,610px);max-width:none;margin:8px 0 -16px}
+  .lp-cta{order:6}
+  .lp-cta.button{width:100%}
+  .lp-hero__benefits{order:7;gap:8px;font-size:13px}
   .lp-questions{padding:64px 0 70px}
   .lp-heading h2{font-size:28px}
   .lp-heading p{font-size:14px}
   .lp-question-grid{grid-template-columns:1fr;gap:12px;margin-top:28px}
+  .lp-question:nth-child(1){order:1}
+  .lp-question:nth-child(2){order:4}
+  .lp-question:nth-child(3){order:2}
+  .lp-question:nth-child(4){order:3}
   .lp-question{min-height:0;padding:20px}
   .lp-report{min-height:0;padding:70px 0}
   .lp-report__grid{display:flex;flex-direction:column;gap:38px}
@@ -191,6 +199,6 @@ img{max-width:100%}
 @media(max-width:390px){
   .lp-wrap{width:calc(100% - 32px)}
   .lp-tabs button{padding:0 10px;font-size:11px}
-  .lp-cta.button{width:220px}
+  .lp-cta.button{width:100%}
 }
 @media(prefers-reduced-motion:reduce){.lp-cta.button{transition:none}}
