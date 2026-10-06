@@ -152,7 +152,7 @@ img{max-width:100%}
   .lp-hero__intro{max-width:530px;font-size:15px}
   .lp-price strong{font-size:34px}
   .lp-hero__benefits{gap:8px;font-size:13px}
-  .lp-hero__art{position:relative;right:auto;bottom:auto;align-self:center;width:min(115%,610px);max-width:none;margin:8px -10% -16px}
+  .lp-hero__art{position:relative;right:auto;bottom:auto;align-self:flex-start;width:min(115%,610px);max-width:none;margin:8px 0 -16px}
   .lp-questions{padding:64px 0 70px}
   .lp-heading h2{font-size:28px}
   .lp-heading p{font-size:14px}
